@@ -43,7 +43,7 @@
                             </li>
                         </ul> <!--End of menu lists-->
                     </div>
-                    <div class="menu__lists-mobile__wrapper ct--menu-wrapper-mobile hidden">
+                    <div class="z-10 menu__lists-mobile__wrapper ct--menu-wrapper-mobile hidden">
                         <!--Responsive for mobile-->
                         <ul class="menu__lists-mobile flex flex-col justify-center items-center w-full">
                             <li class="menu__lists-item ct--top-menu-item inline"><a href=""
@@ -63,16 +63,32 @@
                     <div class="menu__cart basis-1/6 text-center flex justify-end items-center">
                         <i
                             class="fa-solid fa-basket-shopping cursor-pointer  text-gray-400 hover:text-gray-800 ct--top-menu-item"></i>
-                        <i
-                            class="fa-solid fa-list menu__list__icon cursor-pointer text-base text-gray-400 mx-4 hover:text-gray-800 hidden max-md:block ct--top-menu-item"></i>
+                        <span
+                            class="item__number w-6 h-4 ml-1 mt-1 text-center rounded-lg bg-orange-500 text-xs font-semibold text-white">10</span>
+                        <div class="list-icon-wrapper md:hidden">
+
+                            <i
+                                class="fa-solid fa-list menu__list__icon cursor-pointer text-base text-gray-400 mx-4 hover:text-gray-800 ct--top-menu-item"></i>
+                        </div>
                     </div> <!--End of menu cart-->
                 </div>
             </nav> <!--End navbar-->
 
             <div class="app__main">
-                <div class="app__main__slider text-base font-semibold w-full h-80 my-8 bg-red-500 relative">
-                    <div class="slider__modal absolute top-0 left-0 bottom-0 right-0 bg-black opacity-60 hidden"></div>
-
+                <div
+                    class="app__main__slider flex items-center text-base text-white font-medium w-full min-h-100 my-8 relative bg-[url(https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a58aaecdfba_Header-Pic.jpg)] bg-no-repeat bg-cover bg-center">
+                    <div class="slider__modal absolute top-0 left-0 bottom-0  right-0 bg-black opacity-50"></div>
+                    <!--Modal-->
+                    <div class="z-10 content__wrapper flex flex-col justify-center items-center w-[80%] h-1/2 m-auto">
+                        <span class="slider__content block text-sm font-mono uppercase font-semibold">Best place to buy
+                            design</span>
+                        <h2 class="extra-bold text-5xl font-serif my-3">Coffe Mugs</h2>
+                        <span class="slider__content block text-sm text-center font-mono">The most versatile furniture
+                            system ever created. Designed to fit your life, made to move and grow.</span>
+                        <button
+                            class="bg-white text-black text-xs cursor-pointer mt-4 uppercase text-center p-5 rounded-md font-mono">EXPLORE
+                            OUR PRODUCT</button>
+                    </div>
                 </div> <!--End slider-->
                 <div class="app__main__story">
                     Story
