@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @theme {
     --color-light-coffee: #FFA55D; 
+    --color-light-coffee-500: #a25f4b; 
     --animate-floatDown: floatdown 0.5s ease-in-out forwards; 
     --animate-floatUp: floatup 0.5s ease-in-out forwards; 
     @keyframes floatdown {
