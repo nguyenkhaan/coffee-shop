@@ -1,24 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Pages</title>
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-   <div id="root">
-        <div class="content__wrapper">
-            <nav class="content__header">
 
+<body>
+    <div id="root">
+        <div class="content__wrapper max-w-384 mx-auto px-8 text-base">
+            <nav class="content__header py-6 mx-10">
+                <div class="app__menu_bar flex max-w-full h-120p justify-between items-center relative">
+                    <div class="text-center menu__logo basis-2/6 text-xl font-semibold">
+                        CoffeeStyle.
+                    </div> <!--End of logo-->
+                    <div class="menu__lists__wrapper basis-1/2 text-my-black-color max-md:hidden">
+                        <ul
+                            class="menu__lists list-none text-lg gap-6 uppercase font-medium text-gray-400 pl-0 flex items-center justify-evenly">
+                            <li class="menu__list-item ct--top-menu-item">
+                                <a href="" class="hover:text-gray-800 no-underline text-base list-item-link">Home</a>
+                            </li>
+                            <li class="menu__list-item ct--top-menu-item">
+                                <a href=""
+                                    class="hover:text-gray-800 no-underline text-base list-item-link">Products</a>
+                            </li>
+                            <li class="menu__list-item  ct--top-menu-item">
+                                <a href="" class="hover:text-gray-800 no-underline text-base list-item-link">Blog</a>
+                            </li>
+                            <li class="menu__list-item ct--top-menu-item">
+                                <a href="" class="hover:text-gray-800 no-underline text-base list-item-link">About</a>
+                            </li>
+                            <li class="menu__list-item ct--top-menu-item">
+                                <a href="" class="hover:text-gray-800 no-underline text-base list-item-link">Contact</a>
+                            </li>
+                            <li class="menu__list-item ct--top-menu-item">
+                                <a href="" class="hover:text-gray-800 no-underline text-base list-item-link">Guide</a>
+                            </li>
+                        </ul> <!--End of menu lists-->
+                    </div>
+                    <div class="menu__lists-mobile__wrapper ct--menu-wrapper-mobile hidden">
+                        <!--Responsive for mobile-->
+                        <ul class="menu__lists-mobile flex flex-col justify-center items-center w-full">
+                            <li class="menu__lists-item ct--top-menu-item inline"><a href=""
+                                    class="menu__lists-item-link hover:text-gray-800">Home</a></li>
+                            <li class="menu__lists-item ct--top-menu-item inline"><a href=""
+                                    class="menu__lists-item-link hover:text-gray-800">Product</a></li>
+                            <li class="menu__lists-item ct--top-menu-item inline"><a href=""
+                                    class="menu__lists-item-link hover:text-gray-800">Blog</a></li>
+                            <li class="menu__lists-item ct--top-menu-item inline"><a href=""
+                                    class="menu__lists-item-link hover:text-gray-800">About</a></li>
+                            <li class="menu__lists-item ct--top-menu-item inline"><a href=""
+                                    class="menu__lists-item-link hover:text-gray-800">Contact</a></li>
+                            <li class="menu__lists-item ct--top-menu-item inline"><a href=""
+                                    class="menu__lists-item-link hover:text-gray-800">Guide</a></li>
+                        </ul>
+                    </div> <!--End of menu list for mobile-->
+                    <div class="menu__cart basis-1/6 text-center flex justify-end items-center">
+                        <i
+                            class="fa-solid fa-basket-shopping cursor-pointer  text-gray-400 hover:text-gray-800 ct--top-menu-item"></i>
+                        <i
+                            class="fa-solid fa-list menu__list__icon cursor-pointer text-base text-gray-400 mx-4 hover:text-gray-800 hidden max-md:block ct--top-menu-item"></i>
+                    </div> <!--End of menu cart-->
+                </div>
             </nav> <!--End navbar-->
+
             <div class="app__main">
-                <div class="app__main__slider">
-                    Slider
-                </div>   <!--End slider-->
+                <div class="app__main__slider text-base font-semibold w-full h-80 my-8 bg-red-500 relative">
+                    <div class="slider__modal absolute top-0 left-0 bottom-0 right-0 bg-black opacity-60 hidden"></div>
+
+                </div> <!--End slider-->
                 <div class="app__main__story">
-                    Story 
-                </div>  <!--End story--> 
+                    Story
+                </div> <!--End story-->
                 <div class="app__main__feature">
                     feature
                 </div> <!--End of feature-->
@@ -27,18 +85,28 @@
                 </div> <!--End of products-->
                 <div class="app__main__mangazine">
                     mangazine
-                </div> <!--End of mangazine--> 
+                </div> <!--End of mangazine-->
                 <div class="app__main__lifestyle">
                     lifestyle
-                </div> <!--Lifestyle story--> 
+                </div> <!--Lifestyle story-->
                 <div class="app__main__subscribe">
                     subscribe
-                </div> <!--End of subscribe--> 
+                </div> <!--End of subscribe-->
             </div> <!--End main-->
             <footer class="app__footer">
 
-            </footer> <!--End footer--> 
-        </div>  <!--End content__wrapper-->
-   </div> <!--End root-->
+            </footer> <!--End footer-->
+        </div> <!--End content__wrapper-->
+    </div> <!--End root-->
+
+    <script>
+        const mobileMenuIcon = document.querySelector('.menu__list__icon');
+        const mobileMenuList = document.querySelector('.menu__lists-mobile__wrapper')
+        mobileMenuIcon.onclick = function () {
+            // mobileMenuList.classList.remove('animate-floatUp'); 
+            mobileMenuList.classList.toggle('hidden');
+        }
+    </script>
 </body>
+
 </html>
