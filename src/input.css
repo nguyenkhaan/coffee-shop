@@ -4,7 +4,8 @@
     --color-light-coffee-500: #a25f48; 
     --animate-floatDown: floatdown 0.5s ease-in-out forwards; 
     --animate-floatUp: floatup 0.5s ease-in-out forwards; 
-    --animate-floatUpCard: animate-floatUp_card 0.3s ease-in-out forwards; 
+    --animate-floatUpCard: animate-floatUp_card 0.3s ease-in-out forwards;
+     
     @keyframes floatdown {
         from {
             transform: translateY(-100px); 
