@@ -5,6 +5,7 @@
     --animate-floatDown: floatdown 0.5s ease-in-out forwards; 
     --animate-floatUp: floatup 0.5s ease-in-out forwards; 
     --animate-floatUpCard: animate-floatUp_card 0.3s ease-in-out forwards;
+    --animate-floatUpCard2: animate-floatUp_card_2 0.3s ease-in-out forwards; 
      
     @keyframes floatdown {
         from {
@@ -27,7 +28,15 @@
             transform: translateY(20px); 
         }
         to {
-            transform: translateY(0); 
+            transform: translateY(0px); 
+        }
+    }
+        @keyframes animate-floatUp_card_2  {
+        from {
+            transform: translateY(20px); 
+        }
+        to {
+            transform: translateY(-10px); 
         }
     }
     
@@ -46,12 +55,17 @@
     @apply after:h-12 after:w-[92%] after:bg-white after:absolute after:z-11 hover:after:block
     after:left-1/2 after:-translate-x-[50%] after:top-[87%]
     after:content-['explore_mug'] after:text-[12px] after:leading-12 after:text-center after:font-mono after:tracking-wider after:uppercase
-    after:animate-floatUpCard 
+
     after:!opacity-100
     after:hidden; 
     /*Xu li cho cai button troi len o phia duoi moi khi hover vao 1 cai card product */ 
 }
-
+.ct--product__after__1 {
+    @apply after:animate-floatUpCard; 
+}
+.ct--product__after__2 {
+    @apply after:animate-floatUpCard2;
+}
 
 .ct--sub-heading-line {
     @apply h-px w-8 bg-gray-200; 
