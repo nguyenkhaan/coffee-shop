@@ -1,1 +1,84 @@
 @import "tailwindcss";
+@theme {
+    --color-light-coffee: #FFA55D; 
+    --color-light-coffee-500: #a25f48; 
+    --animate-floatDown: floatdown 0.5s ease-in-out forwards; 
+    --animate-floatUp: floatup 0.5s ease-in-out forwards; 
+    --animate-floatUpCard: animate-floatUp_card 0.3s ease-in-out forwards;
+    --animate-floatUpCard2: animate-floatUp_card_2 0.3s ease-in-out forwards; 
+    --animate-floatUpCard3: animate-floatUp_card_3 0.3s ease-in-out forwards; 
+     
+    @keyframes floatdown {
+        from {
+            transform: translateY(-100px); 
+        } 
+        to {
+            transform: translateY(0); 
+        }
+    }
+    @keyframes floatup {
+        from {
+            transform: translateY(0); 
+        } 
+        to {
+            transform: translateY(-100px); 
+        }
+    }
+    @keyframes animate-floatUp_card  {
+        from {
+            transform: translateY(20px); 
+        }
+        to {
+            transform: translateY(0px); 
+        }
+    }
+    @keyframes animate-floatUp_card_2  {
+        from {
+            transform: translateY(20px); 
+        }
+        to {
+            transform: translateY(-10px); 
+        }
+    }
+    @keyframes animate-floatUp_card_3  {
+        from {
+            transform: translateY(0px); 
+        }
+        to {
+            transform: translateY(-24px); 
+        }
+    }
+}
+
+.ct--top-menu-item { 
+    @apply cursor-pointer relative after:absolute after:w-0 after:h-0.5 after:bg-light-coffee after:left-0 after:top-full hover:after:w-full hover:after:transition-all after:ease-in-out hover:after:duration-400;  
+}
+.ct--menu-wrapper-mobile {
+    @apply absolute uppercase top-full left-0 w-full font-semibold min-h-25 my-6 px-4 text-gray-400 animate-floatDown; 
+}
+.ct--sub-heading {
+    @apply uppercase tracking-widest text-gray-500 font-medium text-sm font-mono mx-4; 
+}
+.ct--product__after {
+    @apply after:h-12 after:w-[92%] after:bg-white after:absolute after:z-11 hover:after:block
+    after:left-1/2 after:-translate-x-[50%] after:top-[87%]
+    after:content-['explore_mug'] after:text-[12px] after:leading-12 after:text-center after:font-mono after:tracking-wider after:uppercase
+
+    after:!opacity-100
+    after:hidden; 
+    /*Xu li cho cai button troi len o phia duoi moi khi hover vao 1 cai card product */ 
+}
+.ct--product__after__3
+{
+    @apply after:animate-floatUpCard3; 
+}
+.ct--product__after__1 {
+    @apply after:animate-floatUpCard; 
+}
+.ct--product__after__2 {
+    @apply after:animate-floatUpCard2;
+}
+
+.ct--sub-heading-line {
+    @apply h-px w-8 bg-gray-200; 
+}
