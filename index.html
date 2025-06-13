@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+        </style>
 </head>
 
 <body>
@@ -82,20 +87,21 @@
                     <div class="z-10 content__wrapper flex flex-col justify-center items-center w-[80%] h-1/2 m-auto">
                         <span class="slider__content block text-sm font-mono uppercase font-semibold">Best place to buy
                             design</span>
-                        <h2 class="extra-bold text-5xl font-serif my-3">Coffe Mugs</h2>
-                        <span class="slider__content block text-sm text-center font-mono">The most versatile furniture
+                        <h2 class="font-semibold text-5xl font-serif my-4">Coffe Mugs</h2>
+                        <span class="slider__content block text-[16px] text-center font-mono max-md:hidden">The most versatile
+                            furniture
                             system ever created. Designed to fit your life, made to move and grow.</span>
                         <button
-                            class="bg-white text-black text-xs cursor-pointer mt-4 uppercase text-center p-5 rounded-md font-mono">EXPLORE
+                            class="bg-white text-black text-sm cursor-pointer mt-5 uppercase text-center px-6 py-5 max-md:py-4 max-md:text-xs max-md:px-3 rounded-md font-mono">EXPLORE
                             OUR PRODUCT</button>
                     </div>
                 </div> <!--End slider-->
                 <div
                     class="app__main__story text-black font-xs font-light text-center w-full min-h-60 flex flex-col items-center justify-center ">
-                    <div class="app__main__story__wrapper h-full w-[60%]">
-                        <span class="app__main__story__heading block text-3xl">Even the all-powerful Pointing has no
+                    <div class="app__main__story__wrapper h-full max-lg:w-[80%] max-md:w-[90%] w-[65%]">
+                        <span class="app__main__story__heading block text-3xl max-md:text-2xl">Even the all-powerful Pointing has no
                             control about the blind texts.</span>
-                        <p class="app__main__story__paragraph mt-4 text-sm font-light text-gray-700">
+                        <p class="app__main__story__paragraph mt-4 text-base font-light leading-7 text-gray-700">
                             It is a paradisematic country, in which roasted parts of
                             sentences fly into your mouth. Even the all-powerful Pointing
                             has no control about the blind texts it is an almost
@@ -104,7 +110,7 @@
                             Lorem Ipsum decided to leave for the far World of Grammar.
                         </p>
                         <span
-                            class="inline-block text-light-coffee-500 text-sm mt-6 font-semi-bold after:h-0.5 after:w-full relative after:absolute after:top-full after:left-0 after:bg-light-coffee hover:text-light-coffee-500 hover:after:bg-light-coffee-500 cursor-pointer hover:after:transition-all hover:after:ease-in-out hover:after:duration-400">Read
+                            class="inline-block text-light-coffee-500 text-base mt-6 font-semi-bold after:h-0.5 after:w-full relative after:absolute after:top-full after:left-0 after:bg-light-coffee hover:text-light-coffee-500 hover:after:bg-light-coffee-500 cursor-pointer hover:after:transition-all hover:after:ease-in-out hover:after:duration-400">Read
                             full story</span>
                     </div>
                 </div> <!--End story-->
@@ -115,19 +121,19 @@
                     <div class="ct--sub-heading-line"></div>
                 </div>
 
-                <div class="app__main__feature mb-6 text-base mx-auto min-h-80 w-[70%]">
-                    <div class = "grid grid-cols-2 gap-4 max-md:grid-cols-1">
+                <div class="app__main__feature mb-6 text-base mx-auto min-h-80 w-[65%] max-lg:w-[90%]">
+                    <div class="grid grid-cols-2 gap-4 max-md:grid-cols-1">
                         <div class="product__card h-[540px]">
                             <a href="" class="card__link block h-full w-full bg-black relative ">
                                 <div class="bg-[url(https://cdn.prod.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a25acecdfd6_jakub-dziubak-394720-unsplash.jpg)] hover:transition-all hover:duration-400 hover:ease-in-out
-                                h-full w-full hover:opacity-95 bg-center bg-cover bg-no-repeat relative ct--product__after ct--product__after__1">
+                                h-full w-full hover:opacity-95 bg-center bg-cover bg-no-repeat relative ct--product__after">
                             </div>
                             </a>
                         </div>
                         <div class="product__card  h-[540px]">
                             <a href="" class="card__link block h-full w-full bg-black relative ">
                                 <div class="bg-[url(https://cdn.prod.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg)] hover:transition-all hover:duration-400 hover:ease-in-out
-                                h-full w-full hover:opacity-95 bg-center bg-cover bg-no-repeat relative ct--product__after ct--product__after__1">
+                                h-full w-full hover:opacity-95 bg-center bg-cover bg-no-repeat relative ct--product__after">
                             </div>
                             </a>
                         </div>
@@ -282,11 +288,71 @@
                 <div class="parallax__section w-screen h-[420px] mt-26 bg-center bg-cover bg-no-repeat bg-[url(../img/background-parallax.png)] mb-24 bg-fixed">
 
                 </div>
-                <div class="app__main__lifestyle">
-                    lifestyle
+
+                <div class="app__sub__head-line flex justify-center items-center my-24">
+                <div class="ct--sub-heading-line"></div>
+                <div class="ct--sub-heading ">Behind the mugs, lifestyle stories</div>
+                <div class="ct--sub-heading-line"></div>
+                </div>
+                <div class="app__main__lifestyle flex max-md:flex-col max-lg:w-[90%] itens-center justify-evenly w-[65%] gap-6 min-h-80  mx-auto">
+                    <div class="lifestyle__item flex-1 min-h-100">
+                        <div class="product__card h-[320px]">
+                             <a href="" class="card__link block h-full bg-black relative ">
+                                <div class="bg-[url(https://cdn.prod.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a4ce6ece036_bar-cafe-caffeine-1002740.jpg)] hover:transition-all hover:duration-400 hover:ease-in-out
+                                h-full w-full hover:opacity-95 bg-center bg-cover bg-no-repeat relative ct--product__after ct--product__after__3">
+                                </div>
+                             </a>
+                        </div>
+                        <a href="" class="my-4 pl-1 text-gray-700 block text-lg  hover:text-orange-800 transition-all duration-300 ease-in-out leading-7">Health Check: why do I get a headache when I haven’t had my coffee?</a>
+                        <span class="text-gray-500 text-base pl-1 block mb-5 leading-7">
+                            It is a paradisematic country, in which roasted parts of sentences fly into your mouth. 
+                        </span>
+                        <span class = "uppercase font-mono tracking-widest font-medium pl-1 text-sm text-gray-500">October 9, 2018</span>
+                    </div>
+                    
+                    <div class="lifestyle__item flex-1 min-h-100">
+                        <div class="product__card h-[320px]">
+                             <a href="" class="card__link block h-full bg-black relative ">
+                                <div class="bg-[url(https://cdn.prod.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a481bece02f_Blog%20Pic%20Head%201.jpg)] hover:transition-all hover:duration-400 hover:ease-in-out
+                                h-full w-full hover:opacity-95 bg-center bg-cover bg-no-repeat relative ct--product__after ct--product__after__3">
+                                </div>
+                             </a>
+                        </div>
+                        <a href="" class="my-4 pl-1 block text-lg text-gray-700 hover:text-orange-800 transition-all duration-300 ease-in-out leading-7">How long does a cup of coffee keep you awake?</a>
+                        <span class="text-gray-500 text-base pl-1 block mb-5 leading-7">
+                            It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem.
+                        </span>
+                        <span class = "uppercase font-mono tracking-widest font-medium pl-1 text-sm text-gray-500">October 9, 2018</span>
+                    </div>
+                     <div class="lifestyle__item flex-1 min-h-100">
+                        <div class="product__card h-[320px]">
+                             <a href="" class="card__link block h-full bg-black relative ">
+                                <div class="bg-[url(https://cdn.prod.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a5e47ece03c_Blog%20Pic%20Head%208.jpg)] hover:transition-all hover:duration-400 hover:ease-in-out
+                                h-full w-full hover:opacity-95 bg-center bg-cover bg-no-repeat relative ct--product__after ct--product__after__3">
+                                </div>
+                             </a>
+                        </div>
+                        <a href="" class="my-4 pl-1 block text-lg text-gray-700 hover:text-orange-800 transition-all duration-300 ease-in-out leading-7">Recent research suggests that heavy coffee drinkers may reap health benefits. </a>
+                        <span class="text-gray-500 text-base pl-1 block mb-5 leading-7">
+                            It is a paradisematic country, in which roasted parts of sentences fly into your mouth. 
+                        </span>
+                        <span class = "uppercase font-mono tracking-widest font-medium pl-1 text-sm text-gray-500">October 9, 2018</span>
+                    </div>
+                        
+                </div>
                 </div> <!--Lifestyle story-->
-                <div class="app__main__subscribe">
-                    subscribe
+
+                <div class="app__main__subscribe min-h-80 w-[90%] bg-[#1d1f2e] mx-auto mt-20 flex flex-col items-center justify-center">
+                    <div class="app__sub__head-line flex justify-center mt-6 items-center mb-2.5 max-md:hidden">
+                        <div class="h-px w-8 bg-gray-700"></div>
+                        <div class=" uppercase tracking-widest text-gray-300 font-medium text-xs font-mono mx-4">sign up an get free coffee bags</div>
+                        <div class="h-px w-8 bg-gray-700 "></div>
+                    </div>
+                    <h2 class="font-light tracking-wider my-3 text-[32px] w-full block text-center text-white">Coffee Updates</h2>
+                    <div class="subscribe__form w-full  min-h-20 flex items-center justify-center max-md:flex-col gap-2 max-md:justify-center">
+                        <input type="text" class="w-88 block h-13 focus:outline-none focus:border-gray-300 border-solid border-1 hover:border-gray-300 hover:transition-all duration-300 ease-in-out p-5 border-gray-700 text-gray-200 font-medium text-sm font-mono tracking-widest" placeholder="CUSTOMER@COFFEESTYLE.IO">
+                        <button class="py-4 font-mono tracking-wider box-border px-7 max-md:w-88 uppercase text-gray-800 inline-block bg-white text-center border-0 text-xs">subscribe</button>
+                    </div>
                 </div> <!--End of subscribe-->
             </div> <!--End main-->
             <footer class="app__footer">

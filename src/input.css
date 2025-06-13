@@ -6,6 +6,7 @@
     --animate-floatUp: floatup 0.5s ease-in-out forwards; 
     --animate-floatUpCard: animate-floatUp_card 0.3s ease-in-out forwards;
     --animate-floatUpCard2: animate-floatUp_card_2 0.3s ease-in-out forwards; 
+    --animate-floatUpCard3: animate-floatUp_card_3 0.3s ease-in-out forwards; 
      
     @keyframes floatdown {
         from {
@@ -31,7 +32,7 @@
             transform: translateY(0px); 
         }
     }
-        @keyframes animate-floatUp_card_2  {
+    @keyframes animate-floatUp_card_2  {
         from {
             transform: translateY(20px); 
         }
@@ -39,7 +40,14 @@
             transform: translateY(-10px); 
         }
     }
-    
+    @keyframes animate-floatUp_card_3  {
+        from {
+            transform: translateY(0px); 
+        }
+        to {
+            transform: translateY(-24px); 
+        }
+    }
 }
 
 .ct--top-menu-item { 
@@ -59,6 +67,10 @@
     after:!opacity-100
     after:hidden; 
     /*Xu li cho cai button troi len o phia duoi moi khi hover vao 1 cai card product */ 
+}
+.ct--product__after__3
+{
+    @apply after:animate-floatUpCard3; 
 }
 .ct--product__after__1 {
     @apply after:animate-floatUpCard; 
